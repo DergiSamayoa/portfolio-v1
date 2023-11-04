@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body>
+<body onload="getYear()">
     <!-- header design -->
     <header class="header">
         <div class="logo">
-            portafolio
             <a href="#home">
-                <img src="" alt="portafolio">
+                Dergi Samayoa
+                <img src="" alt="">
             </a>
         </div>
 
@@ -62,11 +62,11 @@
 
         <!-- experience section design -->
         <section class="experience" id="experience">
-            <div class="experience-image">
+            <div class="experience__image">
                 <img src="./assets/images/home.jpg" alt="foto Dergi Samayoa">
             </div>
-            <div class="experience-content">
-                <h2 class="heading">Sobre <span>mi</span></h2>
+            <div class="experience__content">
+                <h2 class="experience__content-heading">Sobre <span>mi</span></h2>
                 <h3>Fullstack Developer</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi cumque cum suscipit
                     aspernatur odit delectus iure adipisci voluptas at nihil nisi iste. Magni sint nemo assumenda
@@ -79,8 +79,7 @@
 
     <!-- footer desing -->
     <footer>
-
-
+        <p>Copyright <span id="copy"></span>&copy; <span id="corazon">Hecho con <img src="./assets/images/heart.png" alt="corazón" width="20px"> en México</span></p>
     </footer>
 
     <!-- custom js -->

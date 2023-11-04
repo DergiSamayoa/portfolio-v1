@@ -42,11 +42,11 @@ body {
     z-index: 100;
 }
 
-.logo {
+.logo a {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
+    /* cursor: default; */
     text-transform: capitalize;
 }
 
@@ -161,7 +161,36 @@ section {
     color: var(--main-color);
 }
 
-.experience_image img {
+.experience__image img {
     width: 40rem;
     margin-right: 3rem;
+}
+
+.experience__content h3 {
+    text-align: left;
+    line-height: 1.3;
+}
+
+.experience__content-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.experience__content h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+
+footer {
+    margin: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#corazon {
+    margin-left: 3rem;
 }
