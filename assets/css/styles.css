@@ -46,7 +46,6 @@ body {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    /* cursor: default; */
     text-transform: capitalize;
 }
 
@@ -73,7 +72,7 @@ body {
 /* content */
 section {
     min-height: 100vh;
-    padding: 10rem 9% 3rem;
+    padding: 10rem 9% 2rem;
 }
 
 .home {
@@ -134,6 +133,7 @@ main span {
 
 .button {
     display: inline-block;
+    margin-top: 1rem;
     padding: 1rem 2.5rem;
     font-size: 1.6rem;
     font-weight: 700;
@@ -191,7 +191,7 @@ main span {
 }
 
 .portfolio h2 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .portfolio__content {
@@ -277,7 +277,7 @@ main span {
 }
 
 .services h2 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .services__content-heading {
@@ -324,14 +324,99 @@ main span {
     margin: 1rem 0 2rem;
 }
 
+.contact {
+    background: var(--primary-bg-color);
+}
 
+.contact h2 {
+    margin-bottom: 3rem;
+}
 
+.contact__content-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
 
+.contact__content form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact__content-input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact__content-input input,
+.contact__content textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background:#080f1c;
+    border: rgba(0, 238, 255, 0.467) solid 1px;
+    border-radius: .8rem;
+    margin: .6rem 0;
+    transition: .7s ease;
+}
+
+.contact__content-input input:hover,
+.contact__content textarea:hover {
+    box-shadow: 0 0 .5rem var(--main-color);
+}
+
+.contact__content-input input {
+    width: 100%;
+}
+
+.contact__content textarea {
+    resize: none;
+}
+
+.contact__content-input label {
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+    margin-top: .5rem;
+}
+
+.full-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.mobilePhone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.emailSubject {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 49%;
+}
 
 footer {
-    margin: 2rem;
+    margin-top: -4rem;
+    padding: 1rem 0;
     text-align: center;
     font-size: 1.5rem;
+    background: var(--second-bg-color);
 }
 
 #corazon {

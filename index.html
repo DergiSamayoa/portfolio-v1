@@ -115,7 +115,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellendus, distinctio fuga
                             quam enim amet quod vero aspernatur
                         </p>
-                        <a href="#" >
+                        <a href="#">
                             <i class='bx bx-link-external'></i>
                         </a>
                     </div>
@@ -181,15 +181,30 @@
             <div class="contact__content">
                 <h2 class="contact__content-heading">Envíame un <span>mensaje</span></h2>
                 <form action="#">
-                    <div class="contact__input">
-                        <input type="text" name="fullName" id="fullName" placeholder="Anota tu nombre completo">+
-                        <input type="email" name="email" id="email" placeholder="Anota tu email">
+                    <div class="contact__content-input">
+                        <div class="full-name">
+                            <label for="fullName">Nombre completo</label>
+                            <input type="text" name="fullName" id="fullName" placeholder="Anota tu nombre completo">
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Anota tu email">
+                        </div>
                     </div>
-                    <div class="contact__input">
-                        <input type="tel" name="mobilePhone" id="mobilePhone" placeholder="Escribe tu número de celular">
-                        <input type="text" name="emailSubject" id="emailSubject" placeholder="Anota el tema del mensaje">
+                    <div class="contact__content-input">
+                        <div class="mobilePhone">
+                            <label for="mobilePhone">Número de celular</label>
+                            <input type="tel" name="mobilePhone" id="mobilePhone"
+                                placeholder="Escribe tu número de celular">
+                        </div>
+                        <div class="emailSubject">
+                            <label for="emailSubject">Título del mensaje</label>
+                            <input type="text" name="emailSubject" id="emailSubject"
+                                placeholder="Anota el tema del mensaje">
+                        </div>
                     </div>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe el mensaje que me enviarás"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="6"
+                        placeholder="Escribe el mensaje que me enviarás"></textarea>
                     <input class="button" type="submit" value="Enviar mensaje">
                 </form>
             </div>
@@ -197,7 +212,7 @@
 
     </main>
 
-    <!-- footer desing -->
+    <!-- footer design -->
     <footer>
         <p>Copyright <span id="copy"></span>&copy; <span id="corazon">Hecho con <img src="./assets/images/heart.png"
                     alt="corazón" width="20px"> en México</span></p>
