@@ -12,7 +12,7 @@
 }
 
 :root {
-    --primary-bg-color: #1f242d;
+    --primary-bg-color: #1c222cdc;
     --second-bg-color: #323946;
     --text-color: #ffffff;
     --main-color: #0ef;
@@ -34,7 +34,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 10%;
     background: var(--primary-bg-color);
     display: flex;
     justify-content: space-between;
@@ -58,15 +58,18 @@ body {
     transition: .4s;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover{
     color: var(--main-color);
+}
+
+.navbar a.active {
+    border-bottom: 2px solid var(--main-color) ;
 }
 
 #menu-icon {
     display: none;
     font-size: 3.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 /* content */
@@ -79,6 +82,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: var(--primary-bg-color);
 }
 
 .home__about h3 {
@@ -106,7 +110,7 @@ main span {
 }
 
 .home__image img {
-    width: 40rem;
+    width: 50rem;
     margin-left: 3rem;
 }
 
@@ -358,7 +362,7 @@ main span {
     font-size: 1.5rem;
     color: var(--text-color);
     background:#080f1c;
-    border: rgba(0, 238, 255, 0.467) solid 1px;
+    border: var(--main-color) solid 1px;
     border-radius: .8rem;
     margin: .6rem 0;
     transition: .4s ease;
