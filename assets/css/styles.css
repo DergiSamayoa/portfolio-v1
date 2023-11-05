@@ -186,6 +186,98 @@ main span {
     margin: 2rem 0 3rem;
 }
 
+.portfolio {
+    background: var(--primary-bg-color);
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portfolio__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio__content-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.portfolio__content-card {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--primary-bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio__content-card img {
+    width: 40rem;
+    height: 23rem;
+    transition: .5s ease;
+}
+
+.portfolio__content-card:hover img {
+    transform: scale(1.2);
+}
+
+.portfolio__content-card-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), var(--primary-bg-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio__content-card:hover .portfolio__content-card-layer {
+    transform: translateY(0);
+}
+
+.portfolio__content-card-layer h4 {
+    font-size: 2rem;
+}
+
+.portfolio__content-card-layer p {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 2rem;
+    color: var(--main-color);
+}
+
+.portfolio__content-card-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio__content-card-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+
+
+.services {
+    background: var(--second-bg-color);
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -206,11 +298,11 @@ main span {
 
 .services__content-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--primary-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--primary-bg-color);
+    border: .2rem solid var(--second-bg-color);
     transition: .7s ease-in;
 }
 
