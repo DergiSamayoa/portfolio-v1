@@ -438,6 +438,10 @@ footer {
     html {
         font-size: 50%;
     }
+
+    .section {
+        margin-top: 1rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -486,6 +490,11 @@ footer {
         align-items: center;
     }
 
+    .home__about {
+        padding-left: 0;
+        width: 80%;
+    }
+
     .home__about h1 {
         font-size: 5rem;
     }
@@ -498,8 +507,19 @@ footer {
         font-size: 2.5rem;
     }
 
-    .home__image {
-        width: 50rem;
+    .home .home__image {
+        display: contents;
+        justify-self: center;
+        align-items: center;
+    }
+
+    .home .home__image img {
+        width: 80%;
         margin-top: 3rem;
+        margin-left: 0rem;
+    }
+
+    .experience {
+        flex-direction: column-reverse;
     }
 }
