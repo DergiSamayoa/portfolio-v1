@@ -439,9 +439,6 @@ footer {
 
 
 
-
-
-
 /* mobile design */
 @media (max-width: 1024px) {
     html {
@@ -570,11 +567,11 @@ footer {
         position: fixed;
         top: 0;
         left: 0;
-        width: 96%;
-        padding: 2rem 10%;
+        width: 100%;
+        padding: 2rem 1rem;
         background: var(--primary-bg-color);
         display: flex;
-        justify-content: space-between;
+        justify-content: space;
         align-items: center;
         z-index: 100;
     }
@@ -584,12 +581,29 @@ footer {
         width: 100%;
         position: sticky;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        gap: 1rem;
         top: 0;
         left: 0;
     }
-    
+
+    section#experience.experience {
+        padding: 10rem 3%;
+    }
+
+    .experience__content-heading {
+        margin: 1rem;
+    }
+
+    .portfolio__content {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__content-card-layer p {
+        font-size: 1.6rem;
+    }
+
     .contact__content-input {
         width: 100%;
     }
